@@ -12,6 +12,11 @@ namespace API
         public bool Favorited {get; set;}
         public bool Deleted {get; set;}
         private static int MAX_ID{get; set;}
+        public ISaveSong Save {get; set;}
+
+        public Song(){
+            Save = new SaveSong();
+        }
 
         //constructor for a new Song
         public Song(string title, string artist){

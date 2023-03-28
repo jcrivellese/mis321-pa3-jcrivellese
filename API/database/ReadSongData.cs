@@ -4,6 +4,7 @@ namespace API.database
 {
     public class ReadSongData : IGetAllSongs, IGetSong
     {
+        //Method for GET list controller
         public List<Song> GetAllSongs(){
             ConnectionString myConn = new ConnectionString();
             string cs = myConn.cs;
@@ -21,6 +22,7 @@ namespace API.database
             }
             return allSongs;
         }
+        //method for GET one controller
         public Song GetSong(int id){
             ConnectionString myConn = new ConnectionString();
             string cs = myConn.cs;

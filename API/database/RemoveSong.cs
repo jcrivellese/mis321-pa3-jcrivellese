@@ -17,6 +17,8 @@ namespace API.database
             using var cmd = new MySqlCommand(stm, conn);
             cmd.ExecuteNonQuery();
         }
+
+        //method for the DELETE controller
         public void Delete(int id){
             ConnectionString myConn = new ConnectionString();
             string cs = myConn.cs;

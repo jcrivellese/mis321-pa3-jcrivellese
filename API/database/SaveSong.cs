@@ -17,6 +17,7 @@ namespace API.database
             cmd.ExecuteNonQuery();
         
         }
+        //method for the POST controller
         public void CreateSong(Song song){
             ConnectionString myConn = new ConnectionString();
             string cs = myConn.cs;
@@ -31,14 +32,14 @@ namespace API.database
             cmd.Parameters.AddWithValue("@Title", song.Title);
             cmd.Parameters.AddWithValue("@Artist", song.Artist);
             cmd.Parameters.AddWithValue("@DateAdded", DateTime.Now);
-            cmd.Parameters.AddWithValue("@Favorited", song.Favorited);
-            cmd.Parameters.AddWithValue("@Deleted", song.Deleted);
+            cmd.Parameters.AddWithValue("@Favorited", false);
+            cmd.Parameters.AddWithValue("@Deleted", false);
 
-            cmd.Prepare();
             cmd.ExecuteNonQuery();
             conn.Close();
 
         }
+        //method for the PUT controller
         public void Save(int id, Song song){
             ConnectionString myConn = new ConnectionString();
             string cs = myConn.cs;

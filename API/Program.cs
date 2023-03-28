@@ -44,12 +44,3 @@ app.MapControllers();
 
 app.Run();
 
-
-// RemoveSong.DropSongTable();
-// SaveSong.CreateSongTable();
-
-// // DateTime now = new DateTime();
-// Song s = new Song(){Title = "Dinosaur", Artist = "Hank Williams Jr.", DateAdded = DateTime.Now, Favorited = false, Deleted = false};
-// Song song = new Song(){Title = "American Way", Artist = "Hank Williams Jr.", DateAdded = DateTime.Now, Favorited = false, Deleted = false};
-// s.Save.CreateSong(s);
-// song.Save.CreateSong(song);
