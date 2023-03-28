@@ -14,8 +14,9 @@
     <div class = "add">
       <button id = "addButton" class="btn btn-primary btn-lg">Click To Add Song</button>
     </div>    
-    <div id="overlay" class="overlay" style="display:none"></div>
+    <div id="overlay" class="overlay"></div>
     <div id="addPopUp" class = "popUp">
+      <button id = "closeAdd" class = "btn btn-danger btn-sm">Close</button>
       <h3 id = "addHeader" class = "header">Add A Song!</h3>
       <label>Title:</label>
       <input type="text" id="titleInput"><br><br>
@@ -24,7 +25,9 @@
       <button id = "addSubmit" class="btn btn-success">Add</button>
     </div>
     <div id="editPopUp" class = "popUp">
+      <button id = "closeEdit" class = "btn btn-danger btn-sm">Close</button>
       <h3 id = "editHeader" class = "header">Edit Song!</h3>
+      <p class = "para">Please enter both the title and artist of the song!</p>
       <label>Edit Title:</label>
       <input type="text" id="titleEdit"><br><br>
       <label>Edit Artist:</label>
