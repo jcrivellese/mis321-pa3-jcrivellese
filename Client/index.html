@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel = "stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "./resources/styles/index.css">
+    <title>Houndstoothify</title>
+</head>
+ 
+<body onload = "handleOnLoad()"> 
+    <h1 id = "pageTitle">Welcome to Houndstoothify!</h1>
+    <div class = "add">
+      <button id = "addButton" class="btn btn-primary btn-lg">Click To Add Song</button>
+    </div>    
+    <div id="overlay" class="overlay" style="display:none"></div>
+    <div id="addPopUp" class = "popUp">
+      <h3 id = "addHeader" class = "header">Add A Song!</h3>
+      <label>Title:</label>
+      <input type="text" id="titleInput"><br><br>
+      <label>Artist:</label>
+      <input type="text" id="artistInput"><br><br>
+      <button id = "addSubmit" class="btn btn-success">Add</button>
+    </div>
+    <div id="editPopUp" class = "popUp">
+      <h3 id = "editHeader" class = "header">Edit Song!</h3>
+      <label>Edit Title:</label>
+      <input type="text" id="titleEdit"><br><br>
+      <label>Edit Artist:</label>
+      <input type="text" id="artistEdit"><br><br>
+      <button id = "editSubmit" class="btn btn-success">Edit</button>
+    </div>
+    <div id = "songs">
+       
+    </div>    
+    <script src = "resources/scripts/index.js"></script>
+</body>
+</html>
