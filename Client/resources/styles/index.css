@@ -8,6 +8,9 @@
     z-index: 2;
     display: none;
 }
+.popUp button {
+    float: right;
+}
 .overlay {
     position: fixed;
     width: 100%;
