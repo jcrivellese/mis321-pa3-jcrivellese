@@ -1,4 +1,6 @@
 let songs = []
+//WHEN PUTTING URL FOR API IN PLEASE MAKE SURE THERE IS A SLASH AT THE END OF THE LINK
+//the backslash needs to be at the end for the rest of the code to work, Thank You!
 const url = "https://localhost:7275/api/song/" //url for the api
 let urlID = ""//variable to hold the edited url for PUT/DELETE functions
 
